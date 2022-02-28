@@ -17,7 +17,8 @@ const loggingOut = () => {
   <div class="bg-gray-800 text-white border-b-4 border-gray-600">
     <div class="container mx-auto flex justify-between items-center">
       <h1 class="text-3xl font-thin tracking-tighter">
-        Vue<span class="font-normal">RealAuth</span>
+        VisualDB
+        <span class="text-sm tracking-wider">v0.0.1</span>
       </h1>
       <nav>
         <ul class="flex space-x-4">
