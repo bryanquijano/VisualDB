@@ -54,6 +54,7 @@ const useAuth = () => {
     }
   };
 
+  // Log out function
   const logout = async () => {
     await signOut(firebaseAuth);
     isAuthenticated.value = false;

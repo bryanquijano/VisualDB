@@ -6,6 +6,12 @@ module.exports = {
       minHeight: {
         "screen-nonav": "calc(100vh - 88px)",
       },
+      height: {
+        128: "32rem",
+      },
+      colors: {
+        primary: "#3bb795",
+      },
     },
   },
   plugins: [],

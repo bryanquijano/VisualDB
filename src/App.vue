@@ -8,5 +8,5 @@ import Footer from "./components/Footer.vue";
   <div class="container mx-auto">
     <router-view />
   </div>
-  <Footer />
+  <!-- <Footer /> -->
 </template>

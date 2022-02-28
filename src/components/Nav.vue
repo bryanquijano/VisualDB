@@ -49,6 +49,16 @@ const loggingOut = () => {
               Login
             </li>
           </router-link>
+          <router-link
+            v-if="!isAuthenticated"
+            :to="{ path: '/register', name: 'Register' }"
+          >
+            <li
+              class="py-8 px-4 hover:cursor-pointer text-white hover:text-gray-700 hover:bg-gray-300"
+            >
+              Sign Up
+            </li>
+          </router-link>
           <div v-else class="flex">
             <router-link :to="{ name: 'Secret' }">
               <li

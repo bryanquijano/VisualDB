@@ -5,6 +5,7 @@ import useAuth from "./composable/useAuth";
 import Index from "./pages/index.vue";
 import About from "./pages/about.vue";
 import Login from "./pages/login.vue";
+import Register from "./pages/register.vue";
 import Secret from "./pages/secret.vue";
 import NotFound from "./pages/404.vue";
 
@@ -26,6 +27,11 @@ const routes = [
     path: "/login",
     name: "Login",
     component: Login,
+  },
+  {
+    path: "/register",
+    name: "Register",
+    component: Register,
   },
   {
     path: "/secret",
