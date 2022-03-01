@@ -9,9 +9,11 @@
   },
   "dependencies": {
     "@vueuse/core": "^7.6.2",
+    "axios": "^0.26.0",
     "firebase": "^9.6.7",
     "vee-validate": "^4.5.8",
     "vue": "^3.2.25",
+    "vue-axios": "^3.4.1",
     "vue-router": "^4.0.12",
     "yup": "^0.32.11"
   },

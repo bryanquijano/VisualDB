@@ -3,8 +3,10 @@ import useAuth from "./composable/useAuth";
 
 // Importing the pages
 import Index from "./pages/index.vue";
+import Home from "./pages/home.vue";
 import About from "./pages/about.vue";
 import Login from "./pages/login.vue";
+import Movie from "./components/Movie.vue";
 import Register from "./pages/register.vue";
 import Secret from "./pages/secret.vue";
 import NotFound from "./pages/404.vue";
@@ -17,6 +19,17 @@ const routes = [
     path: "/",
     name: "Index",
     component: Index,
+  },
+  {
+    path: "/home",
+    name: "Home",
+    component: Home,
+    // beforeEnter: (to, from, next) => {
+    //   if (!isAuthenticated.value) {
+    //     next("/login");
+    //   }
+    //   next();
+    // },
   },
   {
     path: "/about",
@@ -32,6 +45,11 @@ const routes = [
     path: "/register",
     name: "Register",
     component: Register,
+  },
+  {
+    path: "/movie/:id",
+    name: "Movie",
+    component: Movie,
   },
   {
     path: "/secret",

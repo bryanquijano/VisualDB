@@ -27,10 +27,17 @@ const loggingOut = () => {
             <li
               class="py-8 px-4 hover:cursor-pointer text-white hover:text-gray-700 hover:bg-gray-300"
             >
-              Home
+              Index
             </li>
           </router-link>
           <!-- Dynamic method -->
+          <router-link :to="{ name: 'Home' }">
+            <li
+              class="py-8 px-4 hover:cursor-pointer text-white hover:text-gray-700 hover:bg-gray-300"
+            >
+              Home
+            </li>
+          </router-link>
           <router-link :to="{ name: 'About' }">
             <li
               class="py-8 px-4 hover:cursor-pointer text-white hover:text-gray-700 hover:bg-gray-300"
